@@ -18,10 +18,10 @@ function objOfMatches(array1, array2, callback) {
                 obj[array1[i]] = array2[i]
             }
         }
-   } 
+    }
     return obj
 }
 
 console.log(objOfMatches(['hi', 'howdy', 'bye', 'later', 'hello'], ['HI', 'Howdy', 'BYE', 'LATER', 'hello'], function(str) { return str.toUpperCase(); }));
 
-// should log: { hi: 'HI', bye: 'BYE', later: 'LATER' 
+// should log: { hi: 'HI', bye: 'BYE', later: 'LATER'

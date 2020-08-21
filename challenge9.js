@@ -18,7 +18,7 @@ function objOfMatches(array1, array2, callback) {
                 obj[array1[i]] = array2[i]
             }
         }
-    }
+   } 
     return obj
 }
 

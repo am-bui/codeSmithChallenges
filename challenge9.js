@@ -10,7 +10,18 @@
 // input : two arrays
 // output: an object
 
+function objOfMatches(array1, array2, callback) {
+    let obj = {}
+    for (let i = 0; i < array1.length; i++) {
+        for (; i < array2.length; i++) {
+            if (callback(array1[i]) === array2[i]) {
+                obj[array1[i]] = array2[i]
+            }
+        }
+    }
+    return obj
+}
 
+console.log(objOfMatches(['hi', 'howdy', 'bye', 'later', 'hello'], ['HI', 'Howdy', 'BYE', 'LATER', 'hello'], function(str) { return str.toUpperCase(); }));
 
-// console.log(objOfMatches(['hi', 'howdy', 'bye', 'later', 'hello'], ['HI', 'Howdy', 'BYE', 'LATER', 'hello'], function(str) { return str.toUpperCase(); }));
-// should log: { hi: 'HI', bye: 'BYE', later: 'LATER' }
+// should log: { hi: 'HI', bye: 'BYE', later: 'LATER' 

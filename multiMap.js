@@ -1,5 +1,3 @@
-// Challenge 10
-
 // Construct a function multiMap that will accept two arrays:
 // an array of values and an array of callbacks.
 // multiMap will return an object whose keys match the elements in the array of values.

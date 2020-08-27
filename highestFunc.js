@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // Create a function highestFunc that accepts an object (which will contain functions)
 // and a subject (which is any value). highestFunc should return the key of the object
 // whose associated value (which will be a function) returns the largest number,

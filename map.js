@@ -5,6 +5,7 @@
 
 // input: array of numbers
 // output: new array with numbers
+
 function map(array, callback) {
   const newArray = [];
   for (let i = 0; i < array.length; i += 1) {

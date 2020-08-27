@@ -30,4 +30,4 @@ console.log(
   )
 );
 
-// should log: { hi: 'HI', bye: 'BYE', later: 'LATER'
+// should log: { hi: 'HI', bye: 'BYE', later: 'LATER' }

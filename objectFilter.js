@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-restricted-syntax */
-// Challenge 11
-
 // Construct a function objectFilter that accepts an object as the first parameter
 // and a callback function as the second parameter.
 // objectFilter will return a new object.

@@ -1,4 +1,3 @@
-// Challenge 6
 // The function reduce takes an array and reduces the elements to a single value.
 // For example it can sum all the numbers, multiply them, or any operation that you can put into a function.
 

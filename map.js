@@ -1,4 +1,3 @@
-// Challenge 3
 // Create a function called map that takes two inputs:
 // an array of numbers (a list of numbers)
 // a 'callback' function - a function that is applied to each element of the array (inside of the function 'map')

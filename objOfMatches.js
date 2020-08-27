@@ -1,5 +1,3 @@
-// Challenge 9
-
 // Construct a function objOfMatches that accepts two arrays and a callback.
 // objOfMatches will build an object and return it. To build the object,
 // objOfMatches will test each element of the first array using the callback

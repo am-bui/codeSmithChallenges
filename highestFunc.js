@@ -25,3 +25,15 @@ groupOfFuncs.inverse = n => n * -1;
 console.log(highestFunc(groupOfFuncs, 5)); // should log: 'addTen'
 console.log(highestFunc(groupOfFuncs, 11)); // should log: 'double'
 console.log(highestFunc(groupOfFuncs, -20)); // should log: 'inverse'
+
+// function highestFunc(objOfFuncs, subject) {
+//   let largestNum = Number.NEGATIVE_INFINITY
+//   let largestKey;
+// 	for(let key in objOfFuncs){
+//     if(objOfFuncs[key](subject) > largestNum){ //double
+//       largestNum = objOfFuncs[key](subject);//double
+//       largestKey = key;
+//     }
+//   }
+//   return largestKey;
+// }

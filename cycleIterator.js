@@ -9,11 +9,10 @@
 function cycleIterator(array) {
   let index = 0;
   function days() {
-    const result = array[index++];
     if (index >= array.length) {
       index = 0;
     }
-    return result;
+    return array[index++];
   }
   return days;
 }
@@ -25,16 +24,6 @@ console.log(getDay()); // should log: 'Sat'
 console.log(getDay()); // should log: 'Sun'
 console.log(getDay()); // should log: 'Fri'
 
-// function cycleIterator(array) {
-//   let index = 0;
-//   function days() {
-//     for (let i = index; i < array.length; i += 1) {
-//       index++;
-//       if (index >= array.length) {
-//         index = 0;
-//       }
-//       return array[i];
-//     }
-//   }
-//   return days;
-// }
+// note:
+// array[++index] - which means increment to variable index in current statement itself.
+// array[index++] - which means increment to variable index after executing current statement.

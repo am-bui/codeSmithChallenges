@@ -11,7 +11,7 @@ function rating(arrFuncs, val) {
       trueCount += 1;
     }
   }
-  const percentage = trueCount * 25;
+  const percentage = (trueCount / arrFuncs.length) * 100;
   return percentage;
 }
 

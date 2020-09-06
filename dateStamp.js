@@ -6,8 +6,8 @@
 // contains the result from invoking the passed-in function.
 
 function dateStamp(func) {
+  const obj = {};
   function todaysOutput(...arg) {
-    const obj = {};
     const today = new Date();
     obj.date = today.toDateString();
     obj.output = func(...arg);

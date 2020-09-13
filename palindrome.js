@@ -9,7 +9,7 @@
 // do not directly manipulate string parameter
 // declare a variable and assign value of string
 
-// to decrement the index from the end of the string, create a placeholder
+// create a placeholder to be the decremented index from the end of the string,
 // do not directly manipluate parameter
 // create new variable and assign it the value lastIndex
 // reassign endIndex to the characters' last index
@@ -32,10 +32,7 @@
 // return true
 
 function palindrome(string, begIndex = 0, lastIndex) {
-  const characters = string
-    .toLowerCase()
-    .replace(/[~`!@#$%^&*(){}[\];:"'<,.>?/\\|_+=-]/g, '')
-    .replace(/ /g, '');
+  const characters = string.toLowerCase().replace(/[^a-z0-9+]+/gi, '');
 
   let endIndex = lastIndex;
   endIndex = characters.length - 1;
@@ -48,7 +45,7 @@ function palindrome(string, begIndex = 0, lastIndex) {
     if (begIndex === characters.length / 2) {
       return true;
     }
-  } else if (characters.length - (begIndex + endIndex) === 1) {
+  } else {
     return true;
   }
 

@@ -26,3 +26,6 @@ console.log(typeof forEach); // should log: 'function'
 forEach(['a', 'b', 'c'], i => console.log(i)); // should log: 'a', 'b', 'c'
 console.log(typeof mapWith); // should log: 'function'
 console.log(mapWith([3, 4, 5], n => n - 2)); // should log: [1, 2, 3]
+
+// element => result.push(callback(element))
+// function (element){result.push(callback(element))}

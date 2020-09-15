@@ -1,5 +1,7 @@
 Var keyword declares a variable which is scoped to its current execution context(lexical scope). Access before assignment returns undefined. It can be reassigned.
+
 Let keyword declares a block scoped variable. Access before assignment throws ReferenceError. It can be reassigned.
+
 Const keyword declares constants which are block scoped much like variables defined using let but the value of a constant cannot change. Constants cannot be reassigned. The const declaration creates a read-only reference to a value. Access before assignment throws ReferenceError.
 
 

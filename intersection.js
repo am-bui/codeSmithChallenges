@@ -2,47 +2,26 @@
 // and returns a new array with elements found in all of the inputs.
 // BONUS: Use reduce!
 
-// input: array of arrays
-// output: new array with elements found in all inputs
+function reduce(array, callback, initialValue) {
+  let accumulator = initialValue;
+  for (let i = 1; i < array.length; i += 1) {
+    const current = array[i];
+    accumulator = callback(accumulator, current);
+  }
+  return accumulator;
+}
 
-// declare a function called intersection that takes an array of arrays
-// declare a function called reduce
-// reduce will have an array, a callback, and an initial value as params
-// declare a variable called accumulator and assign it the value of the initial value
-// iterate through the array
-// declare a variable that stores the current element
-// reassign accumulator to the evaluation of invoking the callback with the accumulator and current element as arguments
-// return accumulator
-// declare a function called filter that compares 2 arrays
-// initialize a new array and set to an empty array
-// iterate through the array
-// check if the current element of the first array is included in the second array
-// if not, increment i and check condition again
-// if so, push this element into the new array
-// return new array
-// return reduce(array, callback, initialValue)
-
+function filter(array1, array2) {
+  const newArray = [];
+  for (let i = 0; i < array1.length; i += 1) {
+    const element = array1[i];
+    if (array2.includes(element)) {
+      newArray.push(element);
+    }
+  }
+  return newArray;
+}
 function intersection(...arrayOfArrays) {
-  function reduce(array, callback, initialValue) {
-    let accumulator = initialValue;
-    for (let i = 1; i < array.length; i += 1) {
-      const current = array[i];
-      accumulator = callback(accumulator, current);
-    }
-    return accumulator;
-  }
-
-  function filter(array1, array2) {
-    const newArray = [];
-    for (let i = 0; i < array1.length; i += 1) {
-      const element = array1[i];
-      if (array2.includes(element)) {
-        newArray.push(element);
-      }
-    }
-    return newArray;
-  }
-
   return reduce(arrayOfArrays, filter, arrayOfArrays[0]);
 }
 

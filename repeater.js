@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-plusplus */
 function repeater(char, n = 5, string = '') {
   if (n === 0) {
     return string;

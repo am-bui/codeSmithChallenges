@@ -16,7 +16,7 @@ function findInOrderedSet(arr, target, index = 0) {
   }
   // else return false
   // return fIOS(arr, target, index) // increment index
-  counter++;
+  counter += 1;
   return findInOrderedSet(arr, target, counter);
 }
 

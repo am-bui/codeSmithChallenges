@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 // Create a function pipe that accepts an array (of functions) and a value.
 // pipe should input the value into the first function in the array,
 // and then use the output from that function as input for the second
@@ -5,16 +6,11 @@
 // third function, and so forth, until we have an output from the last
 // function in the array. pipe should return the final output.
 
-function pipe(arrFuncs, value) {
-  let output;
-  for (let i = 0; i < arrFuncs.length; i += 1) {
-    if (output === undefined) {
-      output = arrFuncs[i](value);
-    } else {
-      output = arrFuncs[i](output);
-    }
+function pipe(arrOfFuncs, value) {
+  for (let i = 0; i < arrOfFuncs.length; i += 1) {
+    value = arrOfFuncs[i](value);
   }
-  return output;
+  return value;
 }
 
 const capitalize = str => str.toUpperCase();
